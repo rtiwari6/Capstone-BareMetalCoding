@@ -87,7 +87,7 @@ uint8_t disp_test = 0x0F;
  * Digit counters
  */
 uint8_t count = 0;                 // track value to write to the displays
-uint8_t count_limit = 33;          // max count for low digit. 10 for 0 - 9; 16 for hex
+uint8_t count_limit = 71;          // max count for low digit. 10 for 0 - 9; 16 for hex
 
 /*-----------------------------------------------------------------------------
  * Interrupt handlers
@@ -1586,7 +1586,7 @@ void SysTick_Handler(void)
             SPI_transfer_frame(&g_spi0, master_tx_frame);
             break;
 
-        case 69:
+        case 70:
             /* Blank digits 8, 7, 6, 5, 4, 3, 2 and 1 */
 //            master_tx_frame = ((digit1 << 8) + NOOP);
             master_tx_frame = ((digit1 << 8) + dp);
@@ -1614,7 +1614,7 @@ void SysTick_Handler(void)
             SPI_transfer_frame(&g_spi0, master_tx_frame);
             break;
 
-        case 69:
+        case 71:
             /* Blank digits 8, 7, 6, 5, 4, 3, 2 and 1 */
 //            master_tx_frame = ((digit1 << 8) + NOOP);
             master_tx_frame = ((digit1 << 8) + dp);
