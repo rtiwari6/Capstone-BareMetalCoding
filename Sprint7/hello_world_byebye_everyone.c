@@ -67,6 +67,7 @@ uint8_t D = 0x7C;
 uint8_t Y = 0x6C;
 uint8_t N = 0x3C;
 uint8_t V = 0x73;
+uint8_t B = 0x7C;
 uint8_t dp = 0x80;
 uint8_t digit = 0x01;
 uint8_t digit1 = 0x01;
