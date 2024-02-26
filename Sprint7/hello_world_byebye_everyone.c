@@ -1643,9 +1643,6 @@ void SysTick_Handler(void)
             SPI_transfer_frame(&g_spi0, master_tx_frame);
             break;
         }
-        }
-
-
     count++;           // increment low digit counter
     }
      else
